@@ -15,7 +15,8 @@ if ($user->get('guest') == 1 or $user->usertype == 'Registered') {
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" >
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:jdoc="http://www.w3.org/2001/XMLSchema"
+      xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>">
 <head>
 <?php
 $headlink = $this->getHeadData();
@@ -113,8 +114,14 @@ $this->setHeadData($headlink);
 <?php } else { ?>
 <body>
 <?php } ?>
+
+<div id="mainheader1">
+</div>
+<!--<div id="mainheader2"> -->  <!-- при удалении - удалить и стиль этого id -->
+<!--</div>-->
 <div id="mainbody">
-<div id="container">
+
+    <div id="container">
 
     <div id="loading" style="display: none;"></div>
 	<div id="loader" style="display: none;">
@@ -188,12 +195,15 @@ $this->setHeadData($headlink);
     </div>
     <div id="copyrights">
     	<jdoc:include type="modules" name="footer" />
-		<a href="http://www.outmind-design.com" id="od_logo" title="Made by Outmind Design Studio" target="_blank"></a>
+		<a href="http://www.outmind.com" id="od_logo" title="Made by Outmind Design Studio" target="_blank"></a>
     </div>
 </div>
 <jdoc:include type="message" />
 <jdoc:include type="modules" name="message" />
 <div id="fader"></div> <?php } ?>
+
+</div>
+<div id="mainfooter">
 
 </div>
 
