@@ -115,10 +115,14 @@ $this->setHeadData($headlink);
 <body>
 <?php } ?>
 
-<div id="mainheader1">
+<div id="mainheader">
+    <div id="mainheader1">
+    </div>
+    <div id="mainheader2">   <!-- при удалении - удалить и стиль этого id -->
+    </div>
+    <div id="mainheader3">
+    </div>
 </div>
-<!--<div id="mainheader2"> -->  <!-- при удалении - удалить и стиль этого id -->
-<!--</div>-->
 <div id="mainbody">
 
     <div id="container">
@@ -155,7 +159,7 @@ $this->setHeadData($headlink);
         <div id="menu_box">
         	<jdoc:include type="modules" name="menu" />
         </div>
-        <jdoc:include type="modules" name="slidebox" />
+       <jdoc:include type="modules" name="slidebox" />
     </div>
     <div id="wrapper">
 <?php if ($Itemid != '4') {

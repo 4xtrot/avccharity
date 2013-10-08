@@ -22,6 +22,22 @@ body {
     width: 1024px;
     margin: 0 auto;
 }
+#mainheader{
+    margin-bottom: -389px; /*-91px;*/ /*-91 отступ без #mainheader3*/
+}
+
+#mainheader1{
+    background: -moz-linear-gradient(top, rgba(164, 165, 166, 0.1), rgba(0, 0, 0, 0.3));
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.3)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+    background: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+    border-bottom: 1px solid rgba(0, 0, 0, 0.45);
+    min-width: 1024px;
+    height: 50px;
+    /*margin-bottom: -51px;*/
+}
 
 #mainheader2{
     background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3));
@@ -36,21 +52,18 @@ body {
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
     position: relative;
     z-index: 50;
+    height: 38px;
     /*margin-bottom: -38px;*/
 }
 
-
-#mainheader1{
-    background: -moz-linear-gradient(top, rgba(164, 165, 166, 0.1), rgba(0, 0, 0, 0.3));
-    background: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.3)));
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
-    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
-    background: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
-    border-bottom: 1px solid rgba(0, 0, 0, 0.45);
-    min-width: 1024px;
-    height: 50px;
-    margin-bottom: -51px;
+#mainheader3 { /*4xtrot взят из class="slider"*/
+    background: rgba(0,0,0,1) top center no-repeat;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    /*-webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);*/ /*4xtrot добавил и закомментировал, грязновато с тенью получается*/
+    height: 300px;
+    position: relative;
+    z-index: 40;
 }
 
 #mainfooter{
@@ -214,13 +227,13 @@ button::-moz-focus-inner, input[type=submit]::-moz-focus-inner {
 }
 
 #top_line {
-	background: -moz-linear-gradient(top, rgba(164, 165, 166, 0.1), rgba(0, 0, 0, 0.3));
+	/*background: -moz-linear-gradient(top, rgba(164, 165, 166, 0.1), rgba(0, 0, 0, 0.3));
 	background: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
 	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.3)));
 	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
 	background: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
 	background: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
-	border-bottom: 1px solid rgba(0, 0, 0, 0.45);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.45);*/ /*в этой версии эти стили перенесены на подложку #mainheader1*/
 	min-width: 1024px;
 	height: 50px;
 }
@@ -332,7 +345,7 @@ button::-moz-focus-inner, input[type=submit]::-moz-focus-inner {
 /* main menu */
 	
 #menu_box {
-	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3));
+	/*background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3));
 	background: -o-linear-gradient(top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3));
 	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.3)));
 	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3));
@@ -341,7 +354,7 @@ button::-moz-focus-inner, input[type=submit]::-moz-focus-inner {
 	border-top: 1px solid rgba(255, 255, 255, 0.3);
 	border-bottom: 1px solid rgba(0, 0, 0, 0.35);
 	-webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
-	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);*/ /*в этой версии эти настройки перенесены на подложку #mainheader2*/
 	position: relative;
 	z-index: 50;
 }
