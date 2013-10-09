@@ -163,6 +163,8 @@ $this->setHeadData($headlink);
        <jdoc:include type="modules" name="slidebox" />
     </div>
     <div id="wrapper">
+
+
 <?php if ($Itemid != '4') {
     if ($this->countModules('slidebox')) { /*показываем slidebox (фото с пианино под меню)*/
 		if ($this->countModules('sidebar')) { ?>
@@ -170,7 +172,7 @@ $this->setHeadData($headlink);
             <div id="content_side_2">
                 <div id="content_box_2"><jdoc:include type="component" /></div>
             </div>
-            <div id="sidebar_2"><jdoc:include type="modules" name="sidebar" /></div>
+            <!--<div id="sidebar_2"><jdoc:include type="modules" name="sidebar" /></div>-->
    		<?php } else { ?>
            	<div id="content_full"><jdoc:include type="component" /></div>
 		<?php }
