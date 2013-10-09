@@ -127,6 +127,7 @@ $this->setHeadData($headlink);
 
     <div id="container">
 
+    <!--
     <div id="loading" style="display: none;"></div>
 	<div id="loader" style="display: none;">
         <div class="container" style="display: none;">
@@ -134,7 +135,7 @@ $this->setHeadData($headlink);
         </div>
     </div>
     <div id="logo_shade" style="display: none;"></div>
-
+    -->
 <?php $menu = & JSite::getMenu();
 	if ($menu->getActive() != $menu->getDefault()) { ?>
 	<div id="header">
@@ -199,7 +200,7 @@ $this->setHeadData($headlink);
     </div>
     <div id="copyrights">
     	<jdoc:include type="modules" name="footer" />
-		<a href="http://www.outmind.com" id="od_logo" title="Made by Outmind Design Studio" target="_blank"></a>
+		<!--<a href="http://www.outmind.com" id="od_logo" title="Made by Outmind Design Studio" target="_blank"></a>-->
     </div>
 </div>
 <jdoc:include type="message" />
@@ -208,7 +209,8 @@ $this->setHeadData($headlink);
 
 </div>
 <div id="mainfooter">
-
+    <div id="mainfooter1"></div>
+    <div id="mainfooter2"></div>
 </div>
 
 </body>
