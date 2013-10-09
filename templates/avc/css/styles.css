@@ -379,6 +379,7 @@ ul#right_main_menu /*insert by 4xtrot*/ {
 	padding: 0px 10px;
 	position: relative;
 	float: right;
+    margin-right: 7px;
 }
 
 ul#main_menu {
@@ -396,7 +397,7 @@ ul#main_menu {
 	ul#right_main_menu li {
 		display: inline-block;
 		vertical-align: top;
-        margin: 0 7px; /*4xtrot 17 px отступ от контейнера - 10px padding = 7px на выранивание*/
+        margin: 0 0px; /*4xtrot 17 px отступ от контейнера - 10px padding = 7px на выранивание*/
 	}
 	
 		ul#main_menu li a, 
@@ -662,7 +663,36 @@ ul#side_menu {
 	#sidebar { margin-top: 270px; }
 	
 	#sidebar_side { margin-top: 30px; }
-	
+
+/*4xtrot insert. Case content view*/
+#content_side_2 {
+    float: right;
+    margin-left: -100%;
+    padding: 30px 30px 230px 0px;
+    clear: both;
+    width: 100%;
+    overflow: hidden;
+}
+
+#content_box_2 {
+    clear: both;
+    overflow: hidden;
+    min-width: 350px;
+    margin: 0px  0px 0px 330px;
+    position: relative;
+    /*edit by 4xtrot*/
+    max-width: 800px;
+    min-width: 800px;
+}
+
+#sidebar_2 {
+    width: 220px;
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 230px;
+}
+/*end 4xtrot insert*/
+
 /* footer */
 
 #footer {
