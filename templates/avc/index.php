@@ -164,34 +164,16 @@ $this->setHeadData($headlink);
     </div>
     <div id="wrapper">
 
+    <!--4xtrot insert-->
+        <div id="content_side_2">
+            <div id="content_box_2"><jdoc:include type="component" /></div>
+        </div>
+        <div id="sidebar_2"><jdoc:include type="modules" name="sidebar" /></div>
+    <!--end insert 4xtrot-->
 
-<?php if ($Itemid != '4') {
-    if ($this->countModules('slidebox')) { /*показываем slidebox (фото с пианино под меню)*/
-		if ($this->countModules('sidebar')) { ?>
-        	<!--в оригинале надо в id убрать "_2"-->
-            <div id="content_side_2">
-                <div id="content_box_2"><jdoc:include type="component" /></div>
-            </div>
-            <!--<div id="sidebar_2"><jdoc:include type="modules" name="sidebar" /></div>-->
-   		<?php } else { ?>
-           	<div id="content_full"><jdoc:include type="component" /></div>
-		<?php }
-    } else { 
-		if ($this->countModules('sidebar')) { /*не показываем slidebox*/?>
-        	<!--<div id="content_side">-->
-            <div id="content_side_2">
-                <div id="content_box_2"><jdoc:include type="component" /></div>
-            </div>
-            <div id="sidebar_2"><jdoc:include type="modules" name="sidebar" /></div>
-		<?php } else { ?>
-        	<div id="content"><jdoc:include type="component" /></div>
-        <?php }
-    }
-}else { ?>
-    <div id="content_home"><jdoc:include type="component" /></div>
-    <jdoc:include type="modules" name="slideshow" />
-<?php }
-} else { ?>
+    <!--здесь был удален целый блок. См. файл index_101013.php-->
+
+<?php  } else { ?>
     <jdoc:include type="modules" name="slidebox" />
 <?php } ?>
 	</div>

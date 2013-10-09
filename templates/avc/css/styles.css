@@ -569,6 +569,19 @@ ul#side_menu {
 	max-width: 800px;
 	min-width: 800px;
 }
+
+/*4xtrot insert. Для альтернативного показа контента, старый стиль не стал ломать*/
+#content_full_2 {
+    position: relative;
+    padding: 17px 30px 230px 17px;
+    margin: 0 auto;
+    /*edit by 4xtrot*/
+    max-width: 800px;
+    min-width: 800px;
+}
+
+/*end insert 4xtrot*/
+
 	
 	.content_item {
 		clear: both;
@@ -667,28 +680,25 @@ ul#side_menu {
 /*4xtrot insert. Case content view*/
 #content_side_2 {
     float: right;
-    margin-left: -100%;
-    padding: 30px 30px 230px 0px;
-    clear: both;
-    width: 100%;
+    margin: 30px 7px 230px 7px;
+    width: 800px;
     overflow: hidden;
 }
 
-#content_box_2 {
-    clear: both;
+#content_box_2 { /*4xtrot почистить после теста*/
+    /*clear: both;
     overflow: hidden;
     min-width: 350px;
     margin: 0px  0px 0px 330px;
-    position: relative;
-    /*edit by 4xtrot*/
-    max-width: 800px;
-    min-width: 800px;
+    position: relative;*/
+    /*edit by 4xtrot
+    /*max-width: 800px;
+    min-width: 800px;*/
 }
 
 #sidebar_2 {
-    width: 220px;
+    width: 200px;
     float: left;
-    margin-left: 30px;
     margin-bottom: 230px;
 }
 /*end 4xtrot insert*/
