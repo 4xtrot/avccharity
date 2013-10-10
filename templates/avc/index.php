@@ -121,11 +121,9 @@ $this->setHeadData($headlink);
     <div id="mainheader3">
     </div>
 </div>
+
 <div id="mainbody">
-
     <div id="container">
-
-
 	<div id="header">
     	<div id="top_line">
         	<div>
@@ -169,7 +167,6 @@ $this->setHeadData($headlink);
 <jdoc:include type="message" />
 <jdoc:include type="modules" name="message" />
 <div id="fader"></div>
-
 
 </div>
 <div id="mainfooter">

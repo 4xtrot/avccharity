@@ -449,11 +449,12 @@ ul#main_menu {
 	height: 300px;
 	position: absolute;
 	left: /*-28px*//*edit by 4xtrot*/ 0px;
+    top: 85px;
 }
 
-	#logo_box { top: 50px;}
+/*	#logo_box { top: 50px;}
 		
-	#logo_box_slide { top: 85px;}
+	#logo_box_slide { top: 85px;}*/
 
 span#logo, a#logo {
 	background: url(../images/logo.png) 0 0 no-repeat;
