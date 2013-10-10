@@ -4,7 +4,7 @@ $document =& JFactory::getDocument();
 $document->setTitle($document->getTitle().' | '.$mainframe->getCfg('sitename'));
 $user = JFactory::getUser();
 if ($user->get('guest') == 1 or $user->usertype == 'Registered') {
-    $headerstuff = $this->getHeadData();   
+    $headerstuff = $this->getHeadData();
     $tmp = array();
     foreach ($headerstuff['scripts'] as $path=>$type) {
          if ( !preg_match('#media/system/js#i', $path, $ar) ) $tmp[$path] = $type;
@@ -13,8 +13,8 @@ if ($user->get('guest') == 1 or $user->usertype == 'Registered') {
     $this->setHeadData($headerstuff);
 }
 ?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:jdoc="http://www.w3.org/2001/XMLSchema"
       xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>">
 <head>
@@ -69,15 +69,15 @@ $this->setHeadData($headlink);
         tempWindow.fadeOut(500);
         jQuery("#fader_temp").fadeOut(500);
     });
-	
+
 	jQuery('a.jp-stop').click(function() {
 		jQuery.cookie('autoplay', '0', { expires:365 });
 	});
-	
+
 	jQuery('a.jp-play').click(function() {
 		jQuery.cookie('autoplay', '1', { expires:365 });
 	});
-	
+
 	$("#jquery_jplayer_1").jPlayer({
 		ready: function () {
 			if (autoplay == 1) {
@@ -91,7 +91,7 @@ $this->setHeadData($headlink);
 				oga:"/music/melody.ogg"
 			});
 			}
-		}, 
+		},
 		swfPath: "js",
 		supplied: "m4a, oga"
 	});
@@ -102,18 +102,16 @@ $this->setHeadData($headlink);
 <![endif]-->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
-<?php 
+<?php
 	$Itemid = JRequest::getInt( 'Itemid', 1, 'get' );
-	$option = JRequest::getVar('option', null); 
-	$view = JRequest::getVar('view', null); 
+	$option = JRequest::getVar('option', null);
+	$view = JRequest::getVar('view', null);
 	$document = & JFactory::getDocument();
 	$user = & JFactory::getUser();
-?>	
-<?php if ($Itemid == '4') { ?>
-<body id="home">
-<?php } else { ?>
+?>
+
 <body>
-<?php } ?>
+
 
 <div id="mainheader">
     <div id="mainheader1">
@@ -127,28 +125,18 @@ $this->setHeadData($headlink);
 
     <div id="container">
 
-    <!--
-    <div id="loading" style="display: none;"></div>
-	<div id="loader" style="display: none;">
-        <div class="container" style="display: none;">
-            <div id="sprite" style="display: none;"></div>
-        </div>
-    </div>
-    <div id="logo_shade" style="display: none;"></div>
-    -->
-<?php $menu = & JSite::getMenu();
-	if ($menu->getActive() != $menu->getDefault()) { ?>
+
 	<div id="header">
     	<div id="top_line">
         	<div>
             	<jdoc:include type="modules" name="header" />
-                <?php if ($this->countModules('slidebox')) {  
+                <?php if ($this->countModules('slidebox')) {
 					if ($Itemid == '4') { ?>
 						<div id="logo_box_slide"><span title="AVC Charity" id="logo">&nbsp;</span></div>
 					<?php } else { ?>
 						<div id="logo_box_slide"><a href="about-avc-charity" title="На главную AVC Charity" id="logo"></a></div>
-					<?php } 
-				} else { 
+					<?php }
+				} else {
                 	if ($Itemid == '4') { ?>
 						<div id="logo_box"><span title="AVC Charity" id="logo">&nbsp;</span></div>
 					<?php } else { ?>
@@ -163,35 +151,25 @@ $this->setHeadData($headlink);
        <jdoc:include type="modules" name="slidebox" />
     </div>
     <div id="wrapper">
-
-    <!--4xtrot insert-->
         <div id="content_side_2">
             <div id="content_box_2"><jdoc:include type="component" /></div>
         </div>
         <div id="sidebar_2"><jdoc:include type="modules" name="sidebar" /></div>
-    <!--end insert 4xtrot-->
-
-    <!--здесь был удален целый блок. См. файл index_101013.php-->
-
-<?php  } else { ?>
-    <jdoc:include type="modules" name="slidebox" />
-<?php } ?>
 	</div>
 </div>
-<?php $menu = & JSite::getMenu();
-			if ($menu->getActive() != $menu->getDefault()) { ?>
+
 <div id="footer">
 	<div id="footer_line">
 		<jdoc:include type="modules" name="footer_line" />
     </div>
     <div id="copyrights">
     	<jdoc:include type="modules" name="footer" />
-		<!--<a href="http://www.outmind.com" id="od_logo" title="Made by Outmind Design Studio" target="_blank"></a>-->
     </div>
 </div>
 <jdoc:include type="message" />
 <jdoc:include type="modules" name="message" />
-<div id="fader"></div> <?php } ?>
+<div id="fader"></div>
+
 
 </div>
 <div id="mainfooter">
