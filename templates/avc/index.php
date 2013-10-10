@@ -169,7 +169,13 @@ $this->setHeadData($headlink);
 </div>
 <jdoc:include type="message" />
 <jdoc:include type="modules" name="message" />
-<div id="fader"></div>
+<div id="fader"
+     onclick="$(this).remove(); $('div.window_contacts').hide(); $('#fader_temp').remove();">
+
+</div>
+
+
+
 
 </div>
 <div id="mainfooter">
