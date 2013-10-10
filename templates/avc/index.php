@@ -146,6 +146,9 @@ $this->setHeadData($headlink);
         <div id="menu_box">
         	<jdoc:include type="modules" name="menu" />
         </div>
+        <?php if($Itemid == '1') { /*в верхнее меню выводится результаты поиска. Добавляем фото*/ ?>
+            <div id="slider" class="music"></div>
+        <?php } ?>
        <jdoc:include type="modules" name="slidebox" />
     </div>
     <div id="wrapper">
