@@ -101,7 +101,7 @@ $this->setHeadData($headlink);
 <link rel="stylesheet" type="text/css" href="templates/avc/css/ie8.css"/>
 <![endif]-->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-</head>
+
 <?php
 	$Itemid = JRequest::getInt( 'Itemid', 1, 'get' );
 	$option = JRequest::getVar('option', null);
@@ -109,7 +109,18 @@ $this->setHeadData($headlink);
 	$document = & JFactory::getDocument();
 	$user = & JFactory::getUser();
 ?>
+<!-- for random show pictures in header-->
+<style>
+#slider.random_photo {
+    <?php
+    include_once($directory."/helper.php");
+    ?>
+    background: url(templates/avc/images/categories/<?php echo rand_photo($directory."/images/categories"); ?>) #000000 top center no-repeat;
+}
+</style>
+<!-- end random show...-->
 
+</head>
 <body>
 
 
@@ -169,13 +180,7 @@ $this->setHeadData($headlink);
 </div>
 <jdoc:include type="message" />
 <jdoc:include type="modules" name="message" />
-<div id="fader"
-     onclick="$(this).remove(); $('div.window_contacts').hide(); $('#fader_temp').remove();">
-
-</div>
-
-
-
+<div id="fader"></div>
 
 </div>
 <div id="mainfooter">
