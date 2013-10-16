@@ -111,12 +111,15 @@ $this->setHeadData($headlink);
 ?>
 <!-- for random show pictures in header-->
 <style>
-#slider.random_photo {
-    <?php
-    include_once($directory."/helper.php");
-    ?>
-    background: url(templates/avc/images/categories/<?php echo rand_photo($directory."/images/categories"); ?>) #000000 top center no-repeat;
-}
+<?php /* 9 cycles fot 9 categories materials*/
+    for($i=1;$i<=9;$i++){ ?>
+    #slider.random_photo<?php echo $i;?>  {
+        <?php
+        include_once($directory."/helper.php");
+        ?>
+        background: url(/templates/avc/images/categories<?php echo $i;?>/<?php echo rand_photo($directory."/images/categories"); ?>) #000000 top center no-repeat;
+    }
+<?php } ?>
 </style>
 <!-- end random show...-->
 
