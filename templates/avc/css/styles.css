@@ -50,6 +50,7 @@ body {
     border-bottom: 1px solid rgba(0, 0, 0, 0.35);
     -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+    min-width: 1024px;
     position: relative;
     z-index: 50;
     height: 38px;
